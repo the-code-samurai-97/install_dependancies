@@ -8,6 +8,12 @@ sudo apt update -y
 # Install required packages via apt
 sudo apt install -y python3-pip ffmpeg p7zip-full jq poppler-utils fd-find ripgrep fzf zoxide imagemagick git gcc build-essential gitk
 sudo apt install libfuse2
+sudo apt install nodejs
+sudo apt install vim*
+sudo apt insall npm
+sudo apt insall xclip
+
+sudo apt install luarocks
 # Install required packages via snap
 sudo snap install yazi --edge --classic
 sudo snap install curl
@@ -15,6 +21,8 @@ sudo snap install --edge nvim --classic
 sudo snap install ghostty --classic --edge
 sudo snap install gh --classic --edge
 sudo snap install gedit --classic --edge
+sudo snap install cmake --classic --egde
+
 # Clone LazyVim configuration
 if [ ! -d "$HOME/.config/nvim" ]; then
   git clone https://github.com/the-code-samurai-97/lazyvim-config "$HOME/.config/nvim"
@@ -37,5 +45,9 @@ fc-cache -fv # Refresh font cache
 
 # Install Brave Browser
 curl -fsS https://dl.brave.com/install.sh | sh
+
+sudo apt-get install python3-venv
+python3 -m venv .venv
+source .venv/bin/activate
 
 echo "Installation complete!"
