@@ -12,8 +12,8 @@ sudo apt install nodejs
 sudo apt install vim*
 sudo apt insall npm
 sudo apt insall xclip
-
 sudo apt install luarocks
+sudo apt install gnome-tweaks
 # Install required packages via snap
 sudo snap install yazi --edge --classic
 sudo snap install curl
